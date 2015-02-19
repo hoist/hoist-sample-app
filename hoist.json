@@ -10,7 +10,7 @@
     }
   },
   "endpoints": {
-    "helloWorld" : {
+    "/helloWorld" : {
       "methods":["GET"],
       "event":"myapp:helloWorld"
     }
