@@ -1,4 +1,11 @@
 {
+  "endpoints": {
+    "/helloWorld" : {
+      "methods":["GET"],
+      "event":"myapp:helloWorld",
+      "authenticated":false
+    }
+  },
   "modules" : [
   {
     "name" : "helloWorld",
@@ -7,12 +14,6 @@
   "on" : {
     "myapp:helloWorld" : {
       "modules" : ["helloWorld"]
-    }
-  },
-  "endpoints": {
-    "/helloWorld" : {
-      "methods":["GET"],
-      "event":"myapp:helloWorld"
     }
   }
 }
