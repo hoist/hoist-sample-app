@@ -1,0 +1,18 @@
+{
+  "modules" : [
+  {
+    "name" : "helloWorld",
+    "src" : "./helloWorld.js"
+  }],
+  "on" : {
+    "myapp:helloWorld" : {
+      "modules" : ["helloWorld"]
+    }
+  },
+  "endpoints": {
+    "helloWorld" : {
+      "methods":["GET"],
+      "event":"myapp:helloWorld"
+    }
+  }
+}
